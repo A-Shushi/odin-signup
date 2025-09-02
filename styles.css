@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.page-container {
+    height: 100vh;
+    display: flex;
+}
+
+.left-container {
+    background: center url("img/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    width: 35%;
+}
