@@ -21,7 +21,47 @@
             </p>
         </div>
         <div class="right-container">
-
+            <p class="title">This is not a real online service! You know you need
+                something like this in your life to help you realize your deepest
+                dreams.</p>
+            <p class="title">Sign up now to get started.</p>
+            <p class="title cta">You know you want to.</p>
+            <div class="form-container">
+                <p class="form-title">Let's do this!</p>
+                <form action="#" method="#" id="signup-form">
+                    <div class="input-field">
+                        <label for="fname">First Name*:</label>
+                        <input type="text" id="fname" name="first-name"
+                               pattern="^[^0-9]+$" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="lname">Last Name*:</label>
+                        <input type="text" id="lname" name="last-name" pattern="^[^0-9]+$"
+                               required>
+                    </div>
+                    <div class="input-field">
+                        <label for="email">Email*:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="phone-number">Phone*:</label>
+                        <input type="tel" id="phone-number" name="phone-number" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="password">Password*:</label>
+                        <input type="password" id="password" name="password" minlength="8"
+                               required>
+                    </div>
+                    <div class="input-field">
+                        <label for="confirm-password">Confirm Password*:</label>
+                        <input type="password" id="confirm-password"
+                               name="confirm-password" minlength="8"
+                               required>
+                    </div>
+                </form>
+            </div>
+            <button form="signup-form">Create Account</button>
+            <p class="sign-in">Already have an account? <a href="">Log in</a></p>
         </div>
     </div>
 </body>
