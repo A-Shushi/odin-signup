@@ -6,7 +6,8 @@
 }
 
 :root {
-    --logo-text-size: 96px;
+    --logo-text-size: 6rem;
+    --title-text-size: 1.5rem;
     --img-credit-font-color: #c8c8c8;
 }
 
@@ -18,17 +19,17 @@
 .page-container {
     height: 100vh;
     display: flex;
-    font-family: Arial, sans-serif;
+    font-family: Montserrat, sans-serif;
 }
 
 .left-container {
     background: center url("img/halie-west-25xggax4bSA-unsplash.jpg");
     background-size: cover;
-    width: 35%;
     display: flex;
     flex-direction: column;
     color: white;
     min-width: 350px;
+    flex: 1;
 }
 
 .logo-container {
@@ -60,4 +61,120 @@
 .img-credits > a:link,
 .img-credits > a:visited {
     color: var(--img-credit-font-color);
+}
+
+.img-credits > a:hover {
+    color: white;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 2;
+    background: rgb(250, 250, 250);
+}
+
+.right-container > * {
+    padding: 0 6rem 0 3rem;
+}
+
+.title,
+.form-title {
+    font-size: var(--title-text-size);
+    font-weight: 600;
+}
+
+.cta {
+    margin-top: var(--title-text-size);
+    margin-bottom: calc(var(--title-text-size) * 2);
+}
+
+.cta > span {
+    font-style: italic;
+}
+
+.form-container {
+    background: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /*box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;*/
+}
+
+.form-title {
+    margin-top: 1rem;
+}
+
+#signup-form {
+    margin: 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4.5rem;
+    row-gap: 1rem;
+}
+
+label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #515151;
+    margin-bottom: 2px;
+}
+
+input {
+    width: 300px;
+    font-size: 1rem;
+    padding: 0.33rem;
+    border-radius: 4px;
+}
+
+input:focus {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 1px solid blue;
+    outline: none;
+}
+
+input:valid {
+    border: 1px solid green;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:placeholder-shown {
+    border: 1px solid #cdcdcd;
+}
+
+.right-container > button {
+    width: 300px;
+    padding: 1rem 0.5rem;
+    margin: 1.5rem 6rem 1.5rem 3rem;
+    border-radius: 8px;
+    border: none;
+    background: #596d48;
+    color: white;
+    font-weight: bold;
+    font-size: 1.33rem;
+}
+
+.right-container > button:hover,
+.right-container > button:focus {
+    background: #789360;
+}
+
+.right-container > button:active {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.sign-in {
+    font-weight: 500;
+}
+
+.sign-in > a {
+    text-decoration: none;
+    color: #596d48;
+}
+
+.sign-in > a:hover {
+    color: #789360;
 }
